@@ -9,15 +9,20 @@
 
   <body>
     <h1>FOB Calculation</h1>
+
+    <button onclick="fobTotal()">Hitung Total Bayar</button>
+
+
     <!-- Harga Barang -->
     <p>Harga Barang:</p>
     <input
       type="number"
-      value=""
+      value="0"
       name="goods_price"
       id="goods_price"
       placeholder="Masukkan harga beli barang..."
     />
+    <!-- <button onclick="hargaBarang()">Harga Barang</button> -->
     <h3 id="text_goods_price">Rp XXX</h3> 
     
     <!-- Ongkir -->
@@ -29,7 +34,7 @@
     id="delivery_cost"
     placeholder="Masukkan biaya pengiriman..."
     />
-    <h3 id="text_delivery_cost">Rp XXX</h3> 
+    <h3 id="text_delivery_cost">USD 0</h3> 
     
     <!-- Asuransi -->
     <p>Asuransi:</p>
@@ -40,7 +45,7 @@
     id="insurance_cost"
     placeholder="Masukkan biaya asuransi..."
     />
-    <h3 id="text_insurance_cost">Rp XXX</h3> 
+    <h3 id="text_insurance_cost">USD 0</h3> 
     
     <!-- Kurs -->
     <p>Kurs:</p>
@@ -74,9 +79,10 @@
     
      <!-- Total -->
      <p>Total yang harus dibayarkan:</p>
+     <p>BM + PPN</p>
      <h3 id="text_total">Rp XXX</h3> 
+     
 
-    <!-- <button onclick="hargaBarang()">Harga Barang</button>-->
 
     <script src="/index.js"></script>
   </body>
