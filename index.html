@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FOB Calculation</title>
+  </head>
+
+  <body>
+    <h1>FOB Calculation</h1>
+    <!-- Harga Barang -->
+    <p>Harga Barang:</p>
+    <input
+      type="number"
+      value=""
+      name="goods_price"
+      id="goods_price"
+      placeholder="Masukkan harga beli barang..."
+    />
+    <h3 id="text_goods_price">Rp XXX</h3> 
+    
+    <!-- Ongkir -->
+    <p>Ongkos Kirim:</p>
+    <input
+    type="number"
+    value=""
+    name="delivery_cost"
+    id="delivery_cost"
+    placeholder="Masukkan biaya pengiriman..."
+    />
+    <h3 id="text_delivery_cost">Rp XXX</h3> 
+    
+    <!-- Asuransi -->
+    <p>Asuransi:</p>
+    <input
+    type="number"
+    value=""
+    name="insurance_cost"
+    id="insurance_cost"
+    placeholder="Masukkan biaya asuransi..."
+    />
+    <h3 id="text_insurance_cost">Rp XXX</h3> 
+    
+    <!-- Kurs -->
+    <p>Kurs:</p>
+    <h3 id="text_currency">1 USD = Rp 15.000,00</h3> 
+    
+    <!-- Nilai Pabean -->
+    <p>Nilai Pabean (NP):</p>
+    <p>(Harga beli barang + Ongkos kirim + Asuransi) X Kurs</p>
+    <h3 id="text_nilai_pabean">Rp XXX</h3> 
+    
+    <!-- Bea Masuk -->
+    <p>Bea Masuk (BM):</p>
+    <p>(Tarif BM (7.5%) * NP)</p>
+    <h3 id="text_bea_masuk">Rp XXX</h3> 
+
+     <!-- Nilai Import -->
+     <p>Nilai Import (NI):</p>
+     <p>NP + BM</p>
+     <h3 id="text_nilai_import">Rp XXX</h3> 
+    
+     <!-- Pajak Pertambahan Nilai -->
+     <p>Pajak Pertambahan Nilai (PPN):</p>
+     <p>(Tarif PPN(10%) * NI)</p>
+     <h3 id="text_ppn">Rp XXX</h3> 
+    
+     <!-- Pajak Penghasilan -->
+     <p>Pajak Penghasilan (PPh)*:</p>
+     <p>Pasal 22 Impor</p>
+     <p>*</p>
+     <h3 id="text_pph">Rp XXX</h3> 
+    
+     <!-- Total -->
+     <p>Total yang harus dibayarkan:</p>
+     <h3 id="text_total">Rp XXX</h3> 
+
+    <!-- <button onclick="hargaBarang()">Harga Barang</button>-->
+
+    <script src="/index.js"></script>
+  </body>
+</html>
